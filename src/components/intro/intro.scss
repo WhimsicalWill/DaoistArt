@@ -1,0 +1,114 @@
+@import "../../global.scss";
+
+.intro{
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 0.4;
+        overflow: hidden;
+        margin-left: 20px;
+        margin-top: 20px;
+
+        .imgContainer{
+            width: 60vh;
+            height: 60vh;
+            background-color: #E9D0B7; // TODO: fix image border color
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            img{
+                align-items: center;
+                height: 100%;
+            }
+        }
+
+        .iconPanel{
+            width: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 5%;
+            
+            .socialIcon{
+                font-size: 10vh;
+                color: $mainColor;
+            }
+        }
+    }
+
+    .right{
+        flex: 0.6;
+        height: 80vh;
+        position: relative;
+
+        .wrapper{
+            display: flex;
+            margin-top: 10%;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 10vh;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 4vh;
+            }
+            h3{
+                font-size: 5vh;
+
+                span {
+                    font-size: inherit;
+                    color: crimson;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+                    50%{
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .bioContainer{
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+
+
+            p{
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+
+        .buttonContainer{
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0px;
+
+            .main-button{
+                color: black;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+        }
+    }
+}
