@@ -4,8 +4,6 @@ import { useEffect, useRef } from 'react'
 import Button from "@mui/material/Button"
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material/styles';
-// import { TwitterIcon, LinkedInIcon, GitHubIcon } from '@material-ui/icons-material/';
-// import { TwitterIcon, LinkedInIcon, GitHubIcon } from '@mui/icons-material/';
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
