@@ -1,25 +1,31 @@
-import Topbar from "./components/topbar/Topbar"
 import Intro from "./components/intro/Intro"
-import Research from "./components/research/Research"
-import Projects from "./components/projects/Projects"
-import Resources from "./components/resources/Resources"
-import Menu from "./components/menu/Menu"
 import "./app.scss"
-import { useState } from "react"
+import ImageSlider from "./ImageSlider.jsx"
 
 function App() {
-  const [menuOpen,setMenuOpen] = useState(false)
+  const slides = [
+    {url: "./images/dragon_pine1.jpg", title: "Dragon Pine 1"},
+    {url: "https://localhost:3000/dragon_pine2.jpg", title: "Dragon Pine 2"},
+    {url: "https://localhost:3000/dragon_pine3.jpg", title: "Dragon Pine 3"},
+    {url: "https://localhost:3000/dragon_pine4.jpg", title: "Dragon Pine 4"},
+    {url: "https://localhost:3000/dragon_pine5.jpg", title: "Dragon Pine 5"},
+    {url: "https://localhost:3000/dragon_pine6.jpg", title: "Dragon Pine 6"},
+    {url: "https://localhost:3000/dragon_pine7.jpg", title: "Dragon Pine 7"},
+    {url: "https://localhost:3000/dragon_pine8.jpg", title: "Dragon Pine 8"},
+  ]
+
+  const containerStyles = {
+    width: '500px',
+    height: '280px',
+    margin: '0 auto',
+  }
 
   return (
-    <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="sections">
-        <Intro/>
-        <Projects/>
-        <Research/>
-        <Resources/>
-      </div>
+    <div>
+        <h1>Daoist Art</h1>
+        <div style={containerStyles}>
+          <ImageSlider slides={slides} />
+        </div>
     </div>
   );
 }
