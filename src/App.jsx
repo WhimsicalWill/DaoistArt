@@ -1,4 +1,9 @@
-import ImageSlider from "./ImageSlider";
+import "./App.scss"
+import ImageSlider from "./components/ImageSlider/ImageSlider";
+import Intro from "./components/Intro/Intro.jsx"
+import Description from "./components/Description/Description.jsx";
+import Section from "./components/Section/Section.jsx"
+
 const App = () => {
   const slides = [
     { url: "http://localhost:3000/DaoistArt/dragon_pine1.jpg", title: "beach" },
@@ -14,11 +19,16 @@ const App = () => {
     borderStyle: "dashed",
   };
   return (
-    <div>
-      <h1>Daoist Art</h1>
-      <div style={containerStyles}>
+    <div className="app">
+      <Intro />
+      <Description />
+      <Section images={images1} content={content1} />
+      <Section images={images2} content={content2} />
+      <Section images={images3} content={content3} />
+      {/* <div style={containerStyles}>
+        <p>Image Slider</p>
         <ImageSlider slides={slides} />
-      </div>
+      </div> */}
     </div>
   );
 };
