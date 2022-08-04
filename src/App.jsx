@@ -18,13 +18,32 @@ const App = () => {
     margin: "0 auto",
     borderStyle: "dashed",
   };
+  const content1 = {
+    bio: "test",
+  }
+  const content2 = {
+    bio: "test",
+  }
+  const content3 = {
+    bio: "test",
+  }
+  const images1 = {
+    data: "TODO",
+  }
+  const images2 = {
+    data: "TODO",
+  }
+  const images3 = {
+    data: "TODO",
+  }
+
   return (
     <div className="app">
       <Intro />
       <Description />
-      <Section images={images1} content={content1} />
+      {/* <Section images={images1} content={content1} />
       <Section images={images2} content={content2} />
-      <Section images={images3} content={content3} />
+      <Section images={images3} content={content3} /> */}
       {/* <div style={containerStyles}>
         <p>Image Slider</p>
         <ImageSlider slides={slides} />
