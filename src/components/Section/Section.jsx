@@ -10,24 +10,26 @@ import ImageSlider from "../ImageSlider/ImageSlider.jsx";
 ];
 
 const Section = ({images, content}) => {
-    return  <div className="section-container">
-                <div className="section-inner-container">
-                    <div className="section-content">
-                        <div className="flex-1">
-                            <h1>{content.title}</h1>
-                            <h2>{content.artist}</h2>
-                            <h3>{content.date}</h3>
-                            <p>{content.bio}</p>
-                        </div>
-                        <div className="flex-2">
-                            <div className="slider-container">
-                                <p>Image Slider</p>
-                                <ImageSlider slides={slides} />
-                            </div>
-                        </div>
-                    </div>
+
+    const sectionStyling = {
+        backgroundColor: `${content.bgcolor}`,
+    }
+
+return  <div className="section-container" style={sectionStyling}>
+            <div className="section-flex-1">
+                <div className="section-content">
+                    <h1>{content.title}</h1>
+                    <h2>{content.artist}</h2>
+                    <h3>{content.date}</h3>
+                    <p>{content.description}</p>
                 </div>
             </div>
+            <div className="section-flex-2">
+                <div className="slider-container">
+                    <ImageSlider slides={slides} />
+                </div>
+            </div>
+        </div>
 }
 
 export default Section
