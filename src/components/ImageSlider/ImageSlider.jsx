@@ -16,6 +16,9 @@ const ImageSlider = ({ slides }) => {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+  const slideStylesWidthBackground = {
+    backgroundImage: `url(${slides[currentIndex].url})`,
+  };
 
   return (
     <div className="sliderStyle">
@@ -27,9 +30,10 @@ const ImageSlider = ({ slides }) => {
           ❱
         </div>
       </div>
-      <div className="slideStylesWidthBackground">
+      {/* <div className="slideStylesWidthBackground">
         <img src={slides[currentIndex].url} alt="" />
-      </div>
+      </div> */}
+      <div className="slideStyles" style={slideStylesWidthBackground}></div>
       <div className="dotsContainerStyles">
         {slides.map((slide, slideIndex) => (
           <div

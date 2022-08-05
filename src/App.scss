@@ -1,0 +1,14 @@
+.app {
+    height: 100vh; // somehow needed for scroll snapping
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none; // for firefox
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    > *{
+        scroll-snap-align: start;
+    }
+}
