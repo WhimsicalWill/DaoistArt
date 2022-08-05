@@ -4,17 +4,17 @@ const descriptionText = "The tradition known as Daoism can be traced back to 500
 const daoism_url = "http://localhost:3000/DaoistArt/daoism.svg" 
 
 const Description = () => {
-    return  <div className="desc-container">
-                <div className="desc-inner-container">
-                    <div className="flex-1">
-                        <h1>About</h1>
-                        <p className="desc-content">{descriptionText}</p>
-                    </div>
-                    <div className="flex-2">
-                        <img className="image" src={daoism_url} alt="" />
-                    </div>
-                </div>
-            </div>
+	return  <div className="desc-container">
+				<div className="desc-inner-container">
+					<div className="flex-1">
+						<h1>About</h1>
+						<p className="desc-content">{descriptionText}</p>
+					</div>
+					<div className="flex-2">
+						<img className="image" src={daoism_url} alt="" />
+					</div>
+				</div>
+			</div>
 }
 
 export default Description

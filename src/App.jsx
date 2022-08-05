@@ -43,30 +43,19 @@ const App = () => {
 		{ url: "http://localhost:3000/DaoistArt/loquat_bird.jpg" },
 	]
 
-	const rightContent1 = () => {
-		return (
-			<div>
-				<img src="http://localhost:3000/DaoistArt/mountain_path.webp" alt="" />
-				<p>The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼).</p>
-			</div>
-		)
+	const rightContent1 = {
+		src: "http://localhost:3000/DaoistArt/mountain_path.webp",
+		poem: "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
 	}
 
-	const rightContent2 = () => {
-		return (
-			<div>
-				<img src="http://localhost:3000/DaoistArt/mountain_path.webp" alt="" />
-				<p>The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼).</p>
-			</div>
-		)
+	const rightContent2 = {
+		src: "http://localhost:3000/DaoistArt/mountain_path.webp",
+		poem: "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
 	}
 
-	const rightContent3 = () => {
-		return (
-			<div>
-				<img src="http://localhost:3000/DaoistArt/loquat_bird.jpg" alt="" />
-			</div>
-		)
+	const rightContent3 = {
+		src: "http://localhost:3000/DaoistArt/mountain_path.webp",
+		poem: "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
 	}
 
 	// Each section passes leftContent and rightContent
@@ -80,13 +69,13 @@ const App = () => {
 			<Intro className="test" />
 			<Description />
 			<Section className="section" leftContent={leftContent1}>
-				{rightContent1}
+				<Artwork content="rightContent1" />
 			</Section>
 			<Section className="section" leftContent={leftContent2}>
-				{rightContent2}
+				<Artwork content="rightContent2" />
 			</Section>
 			<Section className="section" leftContent={leftContent3}>
-				{rightContent3}
+				<Artwork content="rightContent3" />
 			</Section>
 		</div>
 	)
