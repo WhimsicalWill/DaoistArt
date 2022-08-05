@@ -1,6 +1,6 @@
 import "./App.scss"
 import Intro from "./components/Intro/Intro.jsx"
-import Description from "./components/Description/Description.jsx";
+import Description from "./components/Description/Description.jsx"
 import Section from "./components/Section/Section.jsx"
 
 const App = () => {
@@ -25,30 +25,66 @@ const App = () => {
     bgcolor: "#ffcdb2",
     description: "This work depicts the simple image of a mountain bird foraging for loquats. The detail of the two subjects, the bird and the plant, is immediately apparent to the viewer, while the background is left out. Throughout my search for objects, I have been looking for art pieces that reflect the philosophy and culture of Daoism. I chose this particular image as my final object because I think it is interesting to make the viewer observe the depiction of a man in nature followed by a bird in nature. Ultimately, these pieces convey the same thing – the interaction of different parts of world, and the flow of nature itself. I liked this picture in particular because it is at the same time elegant and humbling. I think being able to appreciate such a simple depiction of an aspect of nature can increase ones appreciation and gratitude.",
   }
-  const images1 = {
-    data: "TODO",
+
+  const images1 = [
+    { url: "http://localhost:3000/DaoistArt/dragon_pine1.jpg" },
+    { url: "http://localhost:3000/DaoistArt/dragon_pine2.jpg" },
+    { url: "http://localhost:3000/DaoistArt/dragon_pine3.jpg" },
+    { url: "http://localhost:3000/DaoistArt/dragon_pine4.jpg" },
+    { url: "http://localhost:3000/DaoistArt/dragon_pine5.jpg" },
+    { url: "http://localhost:3000/DaoistArt/dragon_pine6.jpg" },
+    { url: "http://localhost:3000/DaoistArt/dragon_pine7.jpg" },
+  ]
+
+  const images2 = [
+    { url: "http://localhost:3000/DaoistArt/mountain_path.webp" },
+  ]
+
+  const images3 = [
+    { url: "http://localhost:3000/DaoistArt/loquat_bird.jpg" },
+  ]
+
+  const rightContent1 = () => {
+    return (
+      <div>
+        <img src="http://localhost:3000/DaoistArt/mountain_path.webp" alt="" />
+        <p>The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼).</p>
+      </div>
+    )
   }
-  const images2 = {
-    data: "TODO",
+
+  const rightContent2 = () => {
+    return (
+      <div>
+        <img src="http://localhost:3000/DaoistArt/mountain_path.webp" alt="" />
+        <p>The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼).</p>
+      </div>
+    )
   }
-  const images3 = {
-    data: "TODO",
+
+  const rightContent3 = () => {
+    return (
+      <div>
+        <img src="http://localhost:3000/DaoistArt/loquat_bird.jpg" alt="" />
+      </div>
+    )
   }
 
   return (
     <div className="app">
       <Intro className="test" />
       <Description />
-      <Section className="section" images={images1} content={content1} />
-      <Section className="section" images={images2} content={content2} />
-      <Section className="section" images={images3} content={content3} />
+      <Section className="section" content={content1}>
+        {rightContent1}
+      </Section>
+      <Section className="section" content={content2}>
+        {rightContent2}
+      </Section>
+      <Section className="section" content={content3}>
+        {rightContent3}  
+      </Section>
     </div>
-  );
-};
+  )
+}
 
-/* <div style={containerStyles}>
-        <p>Image Slider</p>
-        <ImageSlider slides={slides} />
-*/
-
-export default App;
+export default App
