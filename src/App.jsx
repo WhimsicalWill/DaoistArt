@@ -12,7 +12,7 @@ const App = () => {
     description: "This collection of paintings dated around the early 15th century depicts a twisting pine tree that is reminiscent of a dragon. The artist Wu Boli created this visual rendering of the so called “Dragon Pine” as an artifact associated with June Hao’s description of the entity. June Hao, a chinese hermit from the 10th century described the idea of “a gigantic pine tree, its aged bark overgrown with lichen, its winged scales seeming to ride in the air. Its stature is like that of a coiling dragon trying to reach the Milky Way.” The different paintings by Wu Boli show the pine tree from different perspectives, and in most of them it is present in the foreground of the image. The presence of a minimalistic background and art style guides the viewer’s focus onto the tree itself as a being that is alive and its majesticly grasping for the heavens.",
   }
   const content2 = {
-    title: "Walking on a Mountain Path in Spring",
+    title: "Walking on a Mountain Path",
     artist: "Ma Yuan",
     date: "Southern Song Dynasty",
     bgcolor: "#ffb4a2",
