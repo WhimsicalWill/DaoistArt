@@ -17,7 +17,7 @@ const Section = ({leftContent, rightContent}) => {
 						</div>
 				</div>
 				<div className="section-flex-2">
-					<span>test</span>
+					{rightContent}
 				</div>
 			</div>
 }

@@ -2,7 +2,7 @@ import "./Artwork.scss"
 
 const Artwork = ({content}) => {
 	return  <div className="art-container">
-				<img className="image" src={content.src} alt="" />
+				{/* <img className="image" src={content.src} alt="" /> */}
 				<span className="poem">{content.poem}</span>
 			</div>
 }

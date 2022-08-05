@@ -2,6 +2,7 @@ import "./App.scss"
 import Intro from "./components/Intro/Intro.jsx"
 import Description from "./components/Description/Description.jsx"
 import Section from "./components/Section/Section.jsx"
+import Artwork from "./components/Artwork/Artwork.jsx"
 
 const App = () => {
 	const leftContent1 = {
@@ -68,15 +69,9 @@ const App = () => {
 		<div className="app">
 			<Intro className="test" />
 			<Description />
-			<Section className="section" leftContent={leftContent1}>
-				<Artwork content="rightContent1" />
-			</Section>
-			<Section className="section" leftContent={leftContent2}>
-				<Artwork content="rightContent2" />
-			</Section>
-			<Section className="section" leftContent={leftContent3}>
-				<Artwork content="rightContent3" />
-			</Section>
+			<Section leftContent={leftContent1} rightContent={<Artwork content={rightContent1} />} />
+			<Section leftContent={leftContent2} rightContent={<Artwork content={rightContent2} />} />
+			<Section leftContent={leftContent3} rightContent={<Artwork content={rightContent3} />} />
 		</div>
 	)
 }
