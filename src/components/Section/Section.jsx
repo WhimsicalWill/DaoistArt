@@ -1,30 +1,29 @@
 import './Section.scss'
 import ImageSlider from "../ImageSlider/ImageSlider.jsx";
 
-const Section = ({content, children}) => {
+const Section = ({leftContent, rightContent}) => {
 
 	const sectionStyling = {
 		backgroundColor: "#f4f4f4",
-		// backgroundColor: `${content.bgcolor}`,
 	}
 
 	return  <div className="section-container" style={sectionStyling}>
 				<div className="section-flex-1">
 						<div className="card">
-							<h3 className="title" >{content.title}</h3>
-							<span className="artist">{content.artist}</span>
-							<span className="date">{content.date}</span>
-							<span className="desc">{content.description}</span>
+							<h3 className="title" >{leftContent.title}</h3>
+							<span className="artist">{leftContent.artist}</span>
+							<span className="date">{leftContent.date}</span>
+							<span className="desc">{leftContent.description}</span>
 						</div>
 				</div>
 				<div className="section-flex-2">
-					{/* <div className="slider-container">
-						<ImageSlider slides={image_list} />
-					</div> */}
-					<p> test </p>
-					{children}
+					<span>test</span>
 				</div>
 			</div>
 }
+
+// for section-flex-2, I could send props to another React component
+// to hide some complexity, but the app is not even that complex,
+// so I think it is fine to include everything in this file.
 
 export default Section
