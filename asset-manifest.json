@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/test_portfolio/static/css/main.a1c6742f.css",
-    "main.js": "/test_portfolio/static/js/main.9ce5c42d.js",
-    "index.html": "/test_portfolio/index.html",
-    "main.a1c6742f.css.map": "/test_portfolio/static/css/main.a1c6742f.css.map",
-    "main.9ce5c42d.js.map": "/test_portfolio/static/js/main.9ce5c42d.js.map"
+    "main.css": "/DaoistArt/static/css/main.cc07deaa.css",
+    "main.js": "/DaoistArt/static/js/main.68d4bb99.js",
+    "index.html": "/DaoistArt/index.html",
+    "main.cc07deaa.css.map": "/DaoistArt/static/css/main.cc07deaa.css.map",
+    "main.68d4bb99.js.map": "/DaoistArt/static/js/main.68d4bb99.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1c6742f.css",
-    "static/js/main.9ce5c42d.js"
+    "static/css/main.cc07deaa.css",
+    "static/js/main.68d4bb99.js"
   ]
 }
