@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const slideStyles = {
   width: "100%",
-  height: "100%",
+  height: "90%",
   borderRadius: "10px",
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -64,6 +64,8 @@ const ImageSlider = ({ slides }) => {
   const slideStylesWidthBackground = {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
   };
 
   return (
@@ -79,14 +81,13 @@ const ImageSlider = ({ slides }) => {
       <div style={slideStylesWidthBackground}></div>
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
-          // <div
-          //   style={dotStyle}
-          //   key={slideIndex}
-          //   onClick={() => goToSlide(slideIndex)}
-          // >
-          //   ●
-          // </div>
-          <></>
+          <div
+            style={dotStyle}
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
+          >
+            ●
+          </div>
         ))}
       </div>
     </div>

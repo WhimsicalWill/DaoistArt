@@ -5,11 +5,11 @@ import ImageSlider from "../ImageSlider/ImageSlider.jsx"
 
 
 const slides = [
-	{ url: "http://localhost:3000/DaoistArt/image-1.jpg", title: "beach" },
-	{ url: "http://localhost:3000/DaoistArt/image-2.jpg", title: "boat" },
-	{ url: "http://localhost:3000/DaoistArt/image-3.jpg", title: "forest" },
-	{ url: "http://localhost:3000/DaoistArt/image-4.jpg", title: "city" },
-	{ url: "http://localhost:3000/DaoistArt/image-5.jpg", title: "italy" },
+	{ url: "http://localhost:3000/DaoistArt/dragon_pine1.jpg", title: "beach" },
+	{ url: "http://localhost:3000/DaoistArt/dragon_pine2.jpg", title: "boat" },
+	{ url: "http://localhost:3000/DaoistArt/dragon_pine3.jpg", title: "forest" },
+	{ url: "http://localhost:3000/DaoistArt/dragon_pine4.jpg", title: "city" },
+	{ url: "http://localhost:3000/DaoistArt/dragon_pine5.jpg", title: "italy" },
 ];
 
 const containerStyles = {
