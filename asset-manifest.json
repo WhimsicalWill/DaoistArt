@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/DaoistArt/static/css/main.cc07deaa.css",
-    "main.js": "/DaoistArt/static/js/main.68d4bb99.js",
+    "main.css": "/DaoistArt/static/css/main.a209dba0.css",
+    "main.js": "/DaoistArt/static/js/main.63e42d07.js",
     "index.html": "/DaoistArt/index.html",
-    "main.cc07deaa.css.map": "/DaoistArt/static/css/main.cc07deaa.css.map",
-    "main.68d4bb99.js.map": "/DaoistArt/static/js/main.68d4bb99.js.map"
+    "main.a209dba0.css.map": "/DaoistArt/static/css/main.a209dba0.css.map",
+    "main.63e42d07.js.map": "/DaoistArt/static/js/main.63e42d07.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc07deaa.css",
-    "static/js/main.68d4bb99.js"
+    "static/css/main.a209dba0.css",
+    "static/js/main.63e42d07.js"
   ]
 }
