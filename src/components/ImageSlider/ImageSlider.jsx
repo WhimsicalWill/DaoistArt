@@ -1,8 +1,9 @@
 import { useState } from "react";
+import './ImageSlider.scss'
 
 const slideStyles = {
 	width: "100%",
-	height: "90%",
+	height: "80%",
 	borderRadius: "10px",
 	backgroundSize: "cover",
 	backgroundPosition: "center",
@@ -10,7 +11,7 @@ const slideStyles = {
 
 const rightArrowStyles = {
 	position: "absolute",
-	top: "50%",
+	top: "40%",
 	transform: "translate(0, -50%)",
 	right: "16px",
 	fontSize: "45px",
@@ -21,7 +22,7 @@ const rightArrowStyles = {
 
 const leftArrowStyles = {
 	position: "absolute",
-	top: "50%",
+	top: "40%",
 	transform: "translate(0, -50%)",
 	left: "16px",
 	fontSize: "45px",
@@ -41,7 +42,7 @@ const dotsContainerStyles = {
 };
 
 const dotStyle = {
-	margin: "0 3px",
+	margin: "auto 3px",
 	cursor: "pointer",
 	fontSize: "20px",
 };
@@ -90,7 +91,7 @@ const ImageSlider = ({ slides }) => {
 						key={slideIndex}
 						onClick={() => goToSlide(slideIndex)}
 					>
-						●
+						<span className={"dot " + ((slideIndex == currentIndex) && "active")}>●</span>
 					</div>
 				))}
 			</div>

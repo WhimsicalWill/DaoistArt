@@ -5,11 +5,11 @@ import ImageSlider from "../ImageSlider/ImageSlider.jsx"
 const poem = "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
 
 const slides = [
-	{ url: "http://localhost:3000/DaoistArt/dragon_pine1.jpg", title: "beach" },
+	{ url: "http://localhost:3000/DaoistArt/dragon_pine5.jpg", title: "beach" },
 	{ url: "http://localhost:3000/DaoistArt/dragon_pine2.jpg", title: "boat" },
 	{ url: "http://localhost:3000/DaoistArt/dragon_pine3.jpg", title: "forest" },
 	{ url: "http://localhost:3000/DaoistArt/dragon_pine4.jpg", title: "city" },
-	{ url: "http://localhost:3000/DaoistArt/dragon_pine5.jpg", title: "italy" },
+	{ url: "http://localhost:3000/DaoistArt/dragon_pine1.jpg", title: "italy" },
 	{ url: "http://localhost:3000/DaoistArt/dragon_pine6.jpg", title: "city" },
 	{ url: "http://localhost:3000/DaoistArt/dragon_pine7.jpg", title: "italy" },
 ];
@@ -29,9 +29,6 @@ const Artwork1 = ({content}) => {
 					<div className="containerStyles" style={containerStyles}>
 						<ImageSlider slides={slides} />
 					</div>
-				</div>
-				<div className="misc1-container">
-					<span className="poem">{poem}</span>
 				</div>
 			</div>
 }

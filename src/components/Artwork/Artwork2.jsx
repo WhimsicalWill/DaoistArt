@@ -29,7 +29,13 @@ const Artwork2 = () => {
 						</div>
 					</div>
 				<div className="misc2-container">
-					<span className="poem2">{artwork.poem}</span>
+					<span className="poem2">
+						<p>The wild flowers dance when brushed by my sleeves.</p>
+						<p>Reclusive birds make no sound as they shun the presence of people</p>
+						<p>(觸袖野花多自舞，避人幽鳥不成啼).</p>
+						{/* {artwork.poem} */}
+					</span>
+
 				</div>
 			</div>
 }

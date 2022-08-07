@@ -28,9 +28,6 @@ const Artwork3 = () => {
 							<ImageSlider slides={slides} />
 						</div>
 					</div>
-				<div className="misc3-container">
-					<span className="poem3">{artwork.poem}</span>
-				</div>
 			</div>
 }
 

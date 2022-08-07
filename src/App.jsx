@@ -28,43 +28,9 @@ const App = () => {
 		description: "This work depicts the simple image of a mountain bird foraging for loquats. The detail of the two subjects, the bird and the plant, is immediately apparent to the viewer, while the background is left out. Throughout my search for objects, I have been looking for art pieces that reflect the philosophy and culture of Daoism. I chose this particular image as my final object because I think it is interesting to make the viewer observe the depiction of a man in nature followed by a bird in nature. Ultimately, these pieces convey the same thing – the interaction of different parts of world, and the flow of nature itself. I liked this picture in particular because it is at the same time elegant and humbling. I think being able to appreciate such a simple depiction of an aspect of nature can increase ones appreciation and gratitude.",
 	}
 
-	const images1 = [
-		{ url: "http://localhost:3000/DaoistArt/dragon_pine1.jpg" },
-		{ url: "http://localhost:3000/DaoistArt/dragon_pine2.jpg" },
-		{ url: "http://localhost:3000/DaoistArt/dragon_pine3.jpg" },
-		{ url: "http://localhost:3000/DaoistArt/dragon_pine4.jpg" },
-		{ url: "http://localhost:3000/DaoistArt/dragon_pine5.jpg" },
-		{ url: "http://localhost:3000/DaoistArt/dragon_pine6.jpg" },
-		{ url: "http://localhost:3000/DaoistArt/dragon_pine7.jpg" },
-	]
-
-	const images2 = [
-		{ url: "http://localhost:3000/DaoistArt/mountain_path.webp" },
-	]
-
-	const images3 = [
-		{ url: "http://localhost:3000/DaoistArt/loquat_bird.jpg" },
-	]
-
-	const rightContent1 = {
-		src: "http://localhost:3000/DaoistArt/mountain_path.webp",
-		poem: "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
-	}
-
-	const rightContent2 = {
-		src: "http://localhost:3000/DaoistArt/mountain_path.webp",
-		poem: "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
-	}
-
-	const rightContent3 = {
-		src: "http://localhost:3000/DaoistArt/mountain_path.webp",
-		poem: "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
-	}
-
 	return (
 		<div className="app">
 			<Intro className="test" />
-			<Description />
 			<Section leftContent={leftContent1} rightContent={<Artwork1 />} />
 			<Section leftContent={leftContent2} rightContent={<Artwork2 />} />
 			<Section leftContent={leftContent3} rightContent={<Artwork3 />} />
