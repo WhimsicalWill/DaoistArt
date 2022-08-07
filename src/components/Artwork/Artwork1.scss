@@ -5,7 +5,7 @@
 	height: 100%;
 
 	.img-container {
-		flex: 4;
+		flex: 400;
 		background-color: lightcyan;
 		position: relative;
 		// display: flex;
@@ -25,18 +25,8 @@
 		}
 	}
 
-	.misc-container {
-		flex: 1;
-		background-color: lightgray;
-	}
 
 	.slider {
 		height: 200px;
-	}
-
-	.poem {
-		// position: absolute;
-		width: 80%;
-		margin: auto;
 	}
 }

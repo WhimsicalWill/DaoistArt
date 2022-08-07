@@ -2,7 +2,9 @@ import "./App.scss"
 import Intro from "./components/Intro/Intro.jsx"
 import Description from "./components/Description/Description.jsx"
 import Section from "./components/Section/Section.jsx"
-import Artwork from "./components/Artwork/Artwork.jsx"
+import Artwork1 from "./components/Artwork/Artwork1.jsx"
+import Artwork2 from "./components/Artwork/Artwork2.jsx"
+import Artwork3 from "./components/Artwork/Artwork3.jsx"
 
 const App = () => {
 	const leftContent1 = {
@@ -59,19 +61,13 @@ const App = () => {
 		poem: "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
 	}
 
-	// Each section passes leftContent and rightContent
-	// leftContent contains descriptions
-	// rightContent contains everything relevant to the artwork
-	// The props are passed to section, and section then handles
-	// building the react components from these
-
 	return (
 		<div className="app">
 			<Intro className="test" />
 			<Description />
-			<Section leftContent={leftContent1} rightContent={<Artwork content={rightContent1} />} />
-			<Section leftContent={leftContent2} rightContent={<Artwork content={rightContent2} />} />
-			<Section leftContent={leftContent3} rightContent={<Artwork content={rightContent3} />} />
+			<Section leftContent={leftContent1} rightContent={<Artwork1 content={rightContent1} />} />
+			<Section leftContent={leftContent2} rightContent={<Artwork2 content={rightContent2} />} />
+			<Section leftContent={leftContent3} rightContent={<Artwork3 content={rightContent3} />} />
 		</div>
 	)
 }
