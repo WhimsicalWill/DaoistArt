@@ -79,13 +79,14 @@ const ImageSlider = ({ slides }) => {
       <div style={slideStylesWidthBackground}></div>
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
-          <div
-            style={dotStyle}
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-          >
-            ●
-          </div>
+          // <div
+          //   style={dotStyle}
+          //   key={slideIndex}
+          //   onClick={() => goToSlide(slideIndex)}
+          // >
+          //   ●
+          // </div>
+          <></>
         ))}
       </div>
     </div>
