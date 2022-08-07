@@ -65,9 +65,9 @@ const App = () => {
 		<div className="app">
 			<Intro className="test" />
 			<Description />
-			<Section leftContent={leftContent1} rightContent={<Artwork1 content={rightContent1} />} />
-			<Section leftContent={leftContent2} rightContent={<Artwork2 content={rightContent2} />} />
-			<Section leftContent={leftContent3} rightContent={<Artwork3 content={rightContent3} />} />
+			<Section leftContent={leftContent1} rightContent={<Artwork1 />} />
+			<Section leftContent={leftContent2} rightContent={<Artwork2 />} />
+			<Section leftContent={leftContent3} rightContent={<Artwork3 />} />
 		</div>
 	)
 }

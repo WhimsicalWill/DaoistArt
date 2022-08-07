@@ -2,6 +2,7 @@ import "./Artwork1.scss"
 import React from 'react'
 import ImageSlider from "../ImageSlider/ImageSlider.jsx"
 
+const poem = "The wild flowers dance when brushed by my sleeves. Reclusive birds make no sound as they shun the presence of people (觸袖野花多自舞，避人幽鳥不成啼)."
 
 const slides = [
 	{ url: "http://localhost:3000/DaoistArt/dragon_pine1.jpg", title: "beach" },
@@ -23,14 +24,14 @@ const containerStyles = {
 };
 
 const Artwork1 = ({content}) => {
-	return  <div className="art-container">
-				<div className="img-container">
+	return  <div className="art1-container">
+				<div className="img1-container">
 					<div className="containerStyles" style={containerStyles}>
 						<ImageSlider slides={slides} />
 					</div>
 				</div>
-				<div className="misc-container">
-					<span className="poem">{content.poem}</span>
+				<div className="misc1-container">
+					<span className="poem">{poem}</span>
 				</div>
 			</div>
 }
