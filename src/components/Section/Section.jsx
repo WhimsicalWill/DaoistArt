@@ -1,5 +1,6 @@
 import './Section.scss'
-import ImageSlider from "../ImageSlider/ImageSlider.jsx";
+import ImageSlider from "../ImageSlider/ImageSlider.jsx"
+import React from 'react'
 
 const Section = ({leftContent, rightContent}) => {
 
