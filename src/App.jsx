@@ -1,6 +1,6 @@
 import "./App.scss"
+import ParticleBackground from "./components/Particles/Particles.jsx"
 import Intro from "./components/Intro/Intro.jsx"
-import Description from "./components/Description/Description.jsx"
 import Section from "./components/Section/Section.jsx"
 import Artwork1 from "./components/Artwork/Artwork1.jsx"
 import Artwork2 from "./components/Artwork/Artwork2.jsx"
@@ -30,7 +30,8 @@ const App = () => {
 
 	return (
 		<div className="app">
-			<Intro className="test" />
+			{/* <ParticleBackground /> */}
+			<Intro />
 			<Section leftContent={leftContent1} rightContent={<Artwork1 />} />
 			<Section leftContent={leftContent2} rightContent={<Artwork2 />} />
 			<Section leftContent={leftContent3} rightContent={<Artwork3 />} />
