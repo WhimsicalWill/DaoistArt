@@ -3,7 +3,17 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
-	background-color: #2a2628;
+}
+
+#tsparticles {   // This is the id of the div created by the Particles component
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  overflow-y: hidden;
 }
 
 .intro-inner-container {
@@ -17,6 +27,7 @@
 	padding: 1em;
 	display: flex;
 	flex-direction: row;
+	border-radius: 20px;
 }
 
 .intro-container {
