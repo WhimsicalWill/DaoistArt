@@ -3,13 +3,13 @@ import React from 'react'
 import ImageSlider from "../ImageSlider/ImageSlider.jsx"
 
 const slides = [
-	{ url: "./DaoistArt/images/dragon_pine5.jpg", title: "dragon_pine1" },
-	{ url: "./DaoistArt/images/dragon_pine2.jpg", title: "dragon_pine2" },
-	{ url: "./DaoistArt/images/dragon_pine3.jpg", title: "dragon_pine3" },
-	{ url: "./DaoistArt/images/dragon_pine4.jpg", title: "dragon_pine4" },
-	{ url: "./DaoistArt/images/dragon_pine1.jpg", title: "dragon_pine5" },
-	{ url: "./DaoistArt/images/dragon_pine6.jpg", title: "dragon_pine6" },
-	{ url: "./DaoistArt/images/dragon_pine7.jpg", title: "dragon_pine7" },
+	{ url: "./images/dragon_pine5.jpg", title: "dragon_pine1" },
+	{ url: "./images/dragon_pine2.jpg", title: "dragon_pine2" },
+	{ url: "./images/dragon_pine3.jpg", title: "dragon_pine3" },
+	{ url: "./images/dragon_pine4.jpg", title: "dragon_pine4" },
+	{ url: "./images/dragon_pine1.jpg", title: "dragon_pine5" },
+	{ url: "./images/dragon_pine6.jpg", title: "dragon_pine6" },
+	{ url: "./images/dragon_pine7.jpg", title: "dragon_pine7" },
 ];
 
 const containerStyles = {

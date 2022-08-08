@@ -3,7 +3,7 @@ import React from 'react'
 import ImageSlider from '../ImageSlider/ImageSlider.jsx'
 
 const slides = [
-	{ url: "./DaoistArt/images/loquat_bird.jpg", title: "loquat bird" },
+	{ url: "./images/loquat_bird.jpg", title: "loquat bird" },
 ];
 
 const container3Styles = {

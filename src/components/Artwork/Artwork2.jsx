@@ -3,7 +3,7 @@ import React from 'react'
 import ImageSlider from '../ImageSlider/ImageSlider.jsx'
 
 const slides = [
-	{ url: "./DaoistArt/images/mountain_path.webp", title: "mountain path" },
+	{ url: "./images/mountain_path.webp", title: "mountain path" },
 ];
 
 const container2Styles = {
