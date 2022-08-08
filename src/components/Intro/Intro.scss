@@ -44,6 +44,7 @@
 	height: 80%;
     position: absolute;
     bottom: 0px;
+	padding: 1rem;
 
 	img {
 		height: 50%;
@@ -60,21 +61,20 @@
 
 .intro-subtitle {
 	font-size: 1em;
+	text-align: center;
 }
 
 .description-container {
 	flex: 1;
 	position: relative;
-	// width: 30%;
-	// color: black;
-	// font-size: 1em;
 }
 
 .description-content {
 	height: 80%;
 	position: absolute;
 	bottom: 0px;
-	font-size: .8rem;
+	font-size: 1rem;
+	padding: 1rem;
 
 	p {
 		line-height: 1.5rem;
