@@ -91,7 +91,7 @@ const ImageSlider = ({ slides }) => {
 						key={slideIndex}
 						onClick={() => goToSlide(slideIndex)}
 					>
-						<span className={"dot " + ((slideIndex == currentIndex) && "active")}>●</span>
+						<span className={"dot " + ((slideIndex === currentIndex) && "active")}>●</span>
 					</div>
 				))}
 			</div>
